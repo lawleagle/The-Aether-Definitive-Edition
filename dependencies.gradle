@@ -1,0 +1,7 @@
+// Add your dependencies here
+
+dependencies {
+    compileOnly("com.github.GTNewHorizons:Battlegear2:master-SNAPSHOT:dev") {
+        transitive = false
+    }
+}
