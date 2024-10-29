@@ -79,7 +79,7 @@ public class ItemAccessory extends Item {
 		int j = blockSource.getYInt() + enumfacing.getFrontOffsetY();
 		int k = blockSource.getZInt() + enumfacing.getFrontOffsetZ();
 		AxisAlignedBB axisalignedbb = AxisAlignedBB.getBoundingBox((double) i, (double) j, (double) k, (double) (i + 1), (double) (j + 1), (double) (k + 1));
-		List<EntityLivingBase> list = blockSource.getWorld().getEntitiesWithinAABB(EntityPlayer.class, axisalignedbb);
+		List<EntityPlayer> list = blockSource.getWorld().getEntitiesWithinAABB(EntityPlayer.class, axisalignedbb);
 
 		if (list.isEmpty()) {
 			return null;
@@ -115,7 +115,7 @@ public class ItemAccessory extends Item {
 
 		return super.onItemRightClick(stack, worldIn, player);
 	}
-	
+
 	@Override
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{

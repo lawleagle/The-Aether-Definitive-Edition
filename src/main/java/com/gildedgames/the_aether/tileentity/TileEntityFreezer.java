@@ -127,7 +127,7 @@ public class TileEntityFreezer extends AetherTileEntity {
 
 	@SuppressWarnings("unchecked")
 	public void addEnchantmentWeight(ItemStack stack) {
-		Map<Enchantment, Integer> enchantments = EnchantmentHelper.getEnchantments(stack);
+		Map<Integer, Integer> enchantments = EnchantmentHelper.getEnchantments(stack);
 
 		if (!enchantments.isEmpty()) {
 			for (int levels : enchantments.values()) {
