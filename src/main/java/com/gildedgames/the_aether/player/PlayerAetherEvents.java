@@ -85,7 +85,7 @@ public class PlayerAetherEvents {
 			PlayerAether playerAether = PlayerAether.get(event.player);
 
 			AetherNetwork.sendTo(new PacketAccessory(playerAether), (EntityPlayerMP) event.player);
-			
+
 			playerAether.updateShardCount(0);
 			event.player.setHealth(event.player.getMaxHealth());
 
@@ -166,16 +166,6 @@ public class PlayerAetherEvents {
 		int achievementType = achievement == AchievementsAether.defeat_bronze ? 1 : achievement == AchievementsAether.defeat_silver ? 2 : 0;
 
 		if (!player.worldObj.isRemote && ((EntityPlayerMP) player).func_147099_x().canUnlockAchievement(achievement) && !((EntityPlayerMP) player).func_147099_x().hasAchievementUnlocked(achievement)) {
-			if (event.achievement == AchievementsAether.enter_aether) {
-				if (!player.inventory.addItemStackToInventory(new ItemStack(ItemsAether.lore_book))) {
-					player.worldObj.spawnEntityInWorld(new EntityItem(player.worldObj, player.posX, player.posY, player.posZ, new ItemStack(ItemsAether.lore_book)));
-				}
-
-				if (!player.inventory.addItemStackToInventory(new ItemStack(ItemsAether.golden_parachute))) {
-					player.worldObj.spawnEntityInWorld(new EntityItem(player.worldObj, player.posX, player.posY, player.posZ, new ItemStack(ItemsAether.golden_parachute)));
-				}
-			}
-
 			AetherNetwork.sendTo(new PacketAchievement(achievementType), (EntityPlayerMP) player);
 		}
 	}
