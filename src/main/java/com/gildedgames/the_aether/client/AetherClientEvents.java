@@ -109,7 +109,7 @@ public class AetherClientEvents {
 					if (stack != null) {
 						if (isValkyrieItem(stack.getItem())) {
 							Vec3 playerVision = player.getLookVec();
-							AxisAlignedBB reachDistance = player.boundingBox.expand(10.0D, 10.0D, 10.0D);
+							AxisAlignedBB reachDistance = player.boundingBox.expand(4.15D, 4.15D, 4.15D);
 
 							List<Entity> locatedEntities = player.worldObj.getEntitiesWithinAABB(Entity.class, reachDistance);
 
