@@ -147,30 +147,30 @@ public class ItemsAether {
 		valkyrie_axe = register("valkyrie_axe", new ItemValkyrieTool(3.0F, EnumAetherToolType.AXE).setTextureName(Aether.find("tools/valkyrie_axe")));
 		valkyrie_shovel = register("valkyrie_shovel", new ItemValkyrieTool(1.0F, EnumAetherToolType.SHOVEL).setTextureName(Aether.find("tools/valkyrie_shovel")));
 
-		zanite_helmet = register("zanite_helmet", new ItemZaniteArmor(0, ArmorMaterial.IRON, "zanite", zanite_gemstone, 0x711ae8).setTextureName(Aether.find("armor/zanite_helmet")));
-		zanite_chestplate = register("zanite_chestplate", new ItemZaniteArmor(1, ArmorMaterial.IRON, "zanite", zanite_gemstone, 0x711ae8).setTextureName(Aether.find("armor/zanite_chestplate")));
-		zanite_leggings = register("zanite_leggings", new ItemZaniteArmor(2, ArmorMaterial.IRON, "zanite", zanite_gemstone, 0x711ae8).setTextureName(Aether.find("armor/zanite_leggings")));
-		zanite_boots = register("zanite_boots", new ItemZaniteArmor(3, ArmorMaterial.IRON, "zanite", zanite_gemstone, 0x711ae8).setTextureName(Aether.find("armor/zanite_boots")));
+		zanite_helmet = register("zanite_helmet", new ItemZaniteArmor(0, ArmorMaterial.IRON, "zanite", zanite_gemstone).setTextureName(Aether.find("armor/zanite_helmet")));
+		zanite_chestplate = register("zanite_chestplate", new ItemZaniteArmor(1, ArmorMaterial.IRON, "zanite", zanite_gemstone).setTextureName(Aether.find("armor/zanite_chestplate")));
+		zanite_leggings = register("zanite_leggings", new ItemZaniteArmor(2, ArmorMaterial.IRON, "zanite", zanite_gemstone).setTextureName(Aether.find("armor/zanite_leggings")));
+		zanite_boots = register("zanite_boots", new ItemZaniteArmor(3, ArmorMaterial.IRON, "zanite", zanite_gemstone).setTextureName(Aether.find("armor/zanite_boots")));
 
-		gravitite_helmet = register("gravitite_helmet", new ItemAetherArmor(0, ArmorMaterial.DIAMOND, "gravitite", Item.getItemFromBlock(BlocksAether.enchanted_gravitite), 0xe752db).setTextureName(Aether.find("armor/gravitite_helmet")));
-		gravitite_chestplate = register("gravitite_chestplate", new ItemAetherArmor(1, ArmorMaterial.DIAMOND, "gravitite", Item.getItemFromBlock(BlocksAether.enchanted_gravitite), 0xe752db).setTextureName(Aether.find("armor/gravitite_chestplate")));
-		gravitite_leggings = register("gravitite_leggings", new ItemAetherArmor(2, ArmorMaterial.DIAMOND, "gravitite", Item.getItemFromBlock(BlocksAether.enchanted_gravitite), 0xe752db).setTextureName(Aether.find("armor/gravitite_leggings")));
-		gravitite_boots = register("gravitite_boots", new ItemAetherArmor(3, ArmorMaterial.DIAMOND, "gravitite", Item.getItemFromBlock(BlocksAether.enchanted_gravitite), 0xe752db).setTextureName(Aether.find("armor/gravitite_boots")));
+		gravitite_helmet = register("gravitite_helmet", new ItemAetherArmor(0, ArmorMaterial.DIAMOND, "gravitite", Item.getItemFromBlock(BlocksAether.enchanted_gravitite)).setTextureName(Aether.find("armor/gravitite_helmet")));
+		gravitite_chestplate = register("gravitite_chestplate", new ItemAetherArmor(1, ArmorMaterial.DIAMOND, "gravitite", Item.getItemFromBlock(BlocksAether.enchanted_gravitite)).setTextureName(Aether.find("armor/gravitite_chestplate")));
+		gravitite_leggings = register("gravitite_leggings", new ItemAetherArmor(2, ArmorMaterial.DIAMOND, "gravitite", Item.getItemFromBlock(BlocksAether.enchanted_gravitite)).setTextureName(Aether.find("armor/gravitite_leggings")));
+		gravitite_boots = register("gravitite_boots", new ItemAetherArmor(3, ArmorMaterial.DIAMOND, "gravitite", Item.getItemFromBlock(BlocksAether.enchanted_gravitite)).setTextureName(Aether.find("armor/gravitite_boots")));
 
-		neptune_helmet = register("neptune_helmet", new ItemAetherArmor(0, ArmorMaterial.DIAMOND, "neptune", null, 0x2654FF).setTextureName(Aether.find("armor/neptune_helmet")));
-		neptune_chestplate = register("neptune_chestplate", new ItemAetherArmor(1, ArmorMaterial.DIAMOND, "neptune", null, 0x2654FF).setTextureName(Aether.find("armor/neptune_chestplate")));
-		neptune_leggings = register("neptune_leggings", new ItemAetherArmor(2, ArmorMaterial.DIAMOND, "neptune", null, 0x2654FF).setTextureName(Aether.find("armor/neptune_leggings")));
-		neptune_boots = register("neptune_boots", new ItemAetherArmor(3, ArmorMaterial.DIAMOND, "neptune", null, 0x2654FF).setTextureName(Aether.find("armor/neptune_boots")));
+		neptune_helmet = register("neptune_helmet", new ItemAetherArmor(0, ArmorMaterial.DIAMOND, "neptune", null).setTextureName(Aether.find("armor/neptune_helmet")));
+		neptune_chestplate = register("neptune_chestplate", new ItemAetherArmor(1, ArmorMaterial.DIAMOND, "neptune", null).setTextureName(Aether.find("armor/neptune_chestplate")));
+		neptune_leggings = register("neptune_leggings", new ItemAetherArmor(2, ArmorMaterial.DIAMOND, "neptune", null).setTextureName(Aether.find("armor/neptune_leggings")));
+		neptune_boots = register("neptune_boots", new ItemAetherArmor(3, ArmorMaterial.DIAMOND, "neptune", null).setTextureName(Aether.find("armor/neptune_boots")));
 
 		phoenix_helmet = register("phoenix_helmet", new ItemAetherArmor(0, ArmorMaterial.DIAMOND, "phoenix", null).setTextureName(Aether.find("armor/phoenix_helmet")));
 		phoenix_chestplate = register("phoenix_chestplate", new ItemAetherArmor(1, ArmorMaterial.DIAMOND, "phoenix", null).setTextureName(Aether.find("armor/phoenix_chestplate")));
 		phoenix_leggings = register("phoenix_leggings", new ItemAetherArmor(2, ArmorMaterial.DIAMOND, "phoenix", null).setTextureName(Aether.find("armor/phoenix_leggings")));
 		phoenix_boots = register("phoenix_boots", new ItemAetherArmor(3, ArmorMaterial.DIAMOND, "phoenix", null).setTextureName(Aether.find("armor/phoenix_boots")));
 
-		obsidian_helmet = register("obsidian_helmet", new ItemAetherArmor(0, ArmorMaterial.DIAMOND, "obsidian", null, 0x1b1447).setTextureName(Aether.find("armor/obsidian_helmet")));
-		obsidian_chestplate = register("obsidian_chestplate", new ItemAetherArmor(1, ArmorMaterial.DIAMOND, "obsidian", null, 0x1b1447).setTextureName(Aether.find("armor/obsidian_chestplate")));
-		obsidian_leggings = register("obsidian_leggings", new ItemAetherArmor(2, ArmorMaterial.DIAMOND, "obsidian", null, 0x1b1447).setTextureName(Aether.find("armor/obsidian_leggings")));
-		obsidian_boots = register("obsidian_boots", new ItemAetherArmor(3, ArmorMaterial.DIAMOND, "obsidian", null, 0x1b1447).setTextureName(Aether.find("armor/obsidian_boots")));
+		obsidian_helmet = register("obsidian_helmet", new ItemAetherArmor(0, ArmorMaterial.DIAMOND, "obsidian", null).setTextureName(Aether.find("armor/obsidian_helmet")));
+		obsidian_chestplate = register("obsidian_chestplate", new ItemAetherArmor(1, ArmorMaterial.DIAMOND, "obsidian", null).setTextureName(Aether.find("armor/obsidian_chestplate")));
+		obsidian_leggings = register("obsidian_leggings", new ItemAetherArmor(2, ArmorMaterial.DIAMOND, "obsidian", null).setTextureName(Aether.find("armor/obsidian_leggings")));
+		obsidian_boots = register("obsidian_boots", new ItemAetherArmor(3, ArmorMaterial.DIAMOND, "obsidian", null).setTextureName(Aether.find("armor/obsidian_boots")));
 
 		valkyrie_helmet = register("valkyrie_helmet", new ItemAetherArmor(0, ArmorMaterial.DIAMOND, "valkyrie", null).setTextureName(Aether.find("armor/valkyrie_helmet")));
 		valkyrie_chestplate = register("valkyrie_chestplate", new ItemAetherArmor(1, ArmorMaterial.DIAMOND, "valkyrie", null).setTextureName(Aether.find("armor/valkyrie_chestplate")));
